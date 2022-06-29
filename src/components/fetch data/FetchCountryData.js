@@ -1,3 +1,4 @@
+import env from "react-dotenv";
 import classes from "../../styles/FetchStyle.module.css";
 import FetchingErrorMessage from './FetchingErrorMessage';
 import GetCountryData from './GetCountryData';
@@ -6,8 +7,8 @@ import LoadingImage from './LoadingImage';
 
 export default function FetchCountryData() {
 
-  const urlForFetchingData = "https://restcountries.com/v3.1/all";
-  const {data , loading , error } = GetCountryData(urlForFetchingData);
+ 
+  const {data , loading , error } = GetCountryData(env.API_URL);
 
   if(loading){
 
