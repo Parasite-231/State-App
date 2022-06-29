@@ -1,4 +1,4 @@
-import loadingIcon from "../../assets/loading icon/earth.gif"
+import loadingIcon from "../../assets/loading icon/alternate.gif"
 import classes from "../../styles/LoadingIconStyle.module.css"
 export default function LoadingImage() {
   return (
